@@ -37,7 +37,7 @@ uv run book-list
 
 著者リストと書籍リストの2つのページがあります。
 
-![](https://raw.githubusercontent.com/SaitoTsutomu/nicegui-pytest/master/images/main.jpg)
+![](https://raw.githubusercontent.com/SaitoTsutomu/nicegui-pytest/refs/heads/master/images/main.jpg)
 
 ## pytestについて
 
