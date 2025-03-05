@@ -8,7 +8,7 @@ import pytest
 from nicegui.testing import Screen, User
 from tortoise import Tortoise
 
-import nicegui_pytest.views
+import nicegui_pytest.pages
 
 
 @pytest.fixture(autouse=True)
@@ -23,12 +23,12 @@ def db() -> Iterable[None]:
 @pytest.fixture
 def user(user: User) -> User:
     """ページを登録してuserフィクスチャを返す"""
-    importlib.reload(nicegui_pytest.views)
+    importlib.reload(nicegui_pytest.pages)
     return user
 
 
 @pytest.fixture
 def screen(screen: Screen) -> Screen:
     """ページを登録してscreenフィクスチャを返す"""
-    importlib.reload(nicegui_pytest.views)
+    importlib.reload(nicegui_pytest.pages)
     return screen

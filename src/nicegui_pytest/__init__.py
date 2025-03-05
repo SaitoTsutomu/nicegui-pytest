@@ -4,7 +4,7 @@ from importlib.metadata import metadata
 
 import fire
 
-from .views import run_app
+from .pages import run_app
 
 _package_metadata = metadata(str(__package__))
 __version__ = _package_metadata["Version"]

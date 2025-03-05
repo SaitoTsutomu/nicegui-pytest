@@ -84,7 +84,7 @@ https://nicegui.io/documentation/section_testing
 * `conftest.py`: `pytest_plugins`を指定する
 * `src/tests/__init__.py`: 空ファイル
 * `src/tests/conftest.py`: フィクスチャなどの作成
-* `src/tests/test_views.py`: テストコードの記述
+* `src/tests/test_pages.py`: テストコードの記述
 
 ### `conftest.py`
 
@@ -125,7 +125,7 @@ def db() -> Iterable[None]:
 @pytest.fixture
 def user(user: User) -> User:
     """ページを登録してuserフィクスチャを返す"""
-    importlib.reload(nicegui_pytest.views)
+    importlib.reload(nicegui_pytest.pages)
     return user
 ```
 
